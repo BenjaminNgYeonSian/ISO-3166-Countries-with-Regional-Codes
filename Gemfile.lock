@@ -1,38 +1,50 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.0.3.4)
+    activesupport (7.1.2)
+      base64
+      bigdecimal
       concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (>= 0.7, < 2)
-      minitest (~> 5.1)
-      tzinfo (~> 1.1)
-      zeitwerk (~> 2.2, >= 2.2.2)
+      connection_pool (>= 2.2.5)
+      drb
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      mutex_m
+      tzinfo (~> 2.0)
+    base64 (0.2.0)
+    bigdecimal (3.1.4)
     builder (3.2.4)
-    concurrent-ruby (1.1.7)
+    concurrent-ruby (1.2.2)
+    connection_pool (2.4.1)
+    drb (2.2.0)
+      ruby2_keywords
     htmlentities (4.3.4)
-    i18n (1.8.5)
+    i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     json (2.3.1)
-    mini_portile2 (2.6.1)
-    minitest (5.14.2)
-    nokogiri (1.12.5)
-      mini_portile2 (~> 2.6.1)
+    mini_portile2 (2.8.5)
+    minitest (5.20.0)
+    mutex_m (0.2.0)
+    nokogiri (1.15.5)
+      mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    racc (1.5.2)
-    thread_safe (0.3.6)
-    tzinfo (1.2.8)
-      thread_safe (~> 0.1)
-    zeitwerk (2.4.2)
+    racc (1.7.3)
+    ruby2_keywords (0.0.5)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  activesupport
+  activesupport (>= 6.1.7.5)
   builder
   htmlentities
   json
-  nokogiri
+  nokogiri (>= 1.13.9)
 
 RUBY VERSION
    ruby 3.0.1
+
+BUNDLED WITH
+   2.2.3
